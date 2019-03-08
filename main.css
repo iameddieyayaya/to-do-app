@@ -1,0 +1,113 @@
+  html {
+    box-sizing: border-box;
+    background: url('images/P1130784-min.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+  }
+
+  *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+
+  .wrapper {
+    padding: 20px;
+    width: 450px;
+    max-width: 650px;
+    background: rgb(116, 107, 104);
+    box-shadow: 0 0 0 10px rgba(255,192,203, .8);
+
+    color: white;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+    box-shadow: 0 0 0 10px rgba(164, 140, 126, 0.3);
+    font-family: 'Permanent Marker', cursive;
+
+  }
+
+  .todoList {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+  }
+
+  .todoList li {
+    border-bottom: 3px solid rgba(8, 23, 41, 0.3);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+  }
+
+  .todoList label {
+    flex: 1;
+    cursor: pointer;
+
+  }
+
+  .todoList input {
+    display: none;
+  }
+
+  .todoList input + label:before {
+    content: '⬜️';
+    margin-right: 10px;
+
+  }
+
+.todoList input:checked + label:before {
+  content: '🙌';
+}
+
+
+.add-items {
+  margin-top: 20px;
+}
+
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.bottomBtns {
+  padding: 10px;
+}
+
+.bottomBtns button {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0,0,0,0.1)
+}
+
+.linethrough
+{
+    text-decoration: line-through rgba(8, 23, 41, .5);
+}
+
+/******* Media Queries *******/
+
+@media all and (max-width: 736px)
+{
+  .wrapper {
+    max-width: 350px;
+  }
+}
+
+@media all and (max-width: 480px)
+{
+  .wrapper {
+    max-width: 300px;
+  }
+
+}
